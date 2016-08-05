@@ -5,9 +5,8 @@ var glob = require('glob');
 function getEntry(sourcePath) {
   var entrys = {};
   var basename;
-  sourcePath = sourcePath || './app/src/*/*/*.jade';
+  sourcePath = sourcePath || './app/src/*/*.js';
   glob.sync(sourcePath).forEach(function (entry) {
-    // if (entry.indexOf('/_/') < 0) {
     if (!/\/_\/|\/plugins\/|\/custom_plugins\//g.test(entry)) {
       var basename = entry.replace('./app/src/', '');
       basename = basename.substr(0, basename.lastIndexOf('.'));

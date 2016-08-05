@@ -4,12 +4,14 @@
     "jquery2/jquery.min.js",
     "underscore/underscore-min.js"
   ],
-
+  "vueScript":[
+    "vue/dist/vue.min.js"
+  ],
   "mobile":[
 
   ],
   "baseStyle": [
-
+    "vux/dist/vux.css"
   ],
   "cdn": ""
 }

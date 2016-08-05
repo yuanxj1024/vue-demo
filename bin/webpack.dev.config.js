@@ -18,9 +18,11 @@ var globalConfig = require('../app/global.config.json');
 globalConfig = complie(globalConfig);
 
 // 获取所有js入口
-var entrys = getEntry('./app/src/*/*/*.js');
+var entrys = getEntry('./app/src/*/*.js');
+console.log('entrys:\n', entrys);
 // 获取所有页面
-var pages = getEntry('./app/src/*/*/*.jade');
+var pages = getEntry('./app/src/*/*.jade');
+console.log('pages:\n',pages);
 
 // webpack处理的插件
 var plugins = [];
@@ -90,9 +92,10 @@ var config = {
     extensions: ['', '.js', '.css', '.scss', '.jade', '.png', '.jpg']
   },
   externals: {
-    jquery: 'window.jQuery',
-    backbone: 'window.Backbone',
-    underscore: 'window._'
+    Vue: 'window.Vue'
+    // jquery: 'window.jQuery',
+    // backbone: 'window.Backbone',
+    // underscore: 'window._'
   }
 };
 module.exports = config;

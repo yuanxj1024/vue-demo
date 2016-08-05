@@ -1,0 +1,25 @@
+//- - var complie = htmlWebpackPlugin.options.globalConfig
+//- - var src = complie.cdn || '/plugins/'
+
+doctype html
+html(lang=en)
+  head
+    title 360某次活动落地页
+    include ../_/jade/baseStyle.jade
+  body
+    h1 落地页
+    //- nav
+    //- h2 test page1111222
+    //- div hello word 123 
+    //- div.person 111323
+    div#content
+      group
+        switch(title="Toggle",:value.sync="show")
+      alert(:show.sync="show",title='test') test message
+      main-content
+    //- div#contentId
+    //-   content
+    
+    
+    include ../_/jade/vue.jade
+    

@@ -1,0 +1,5 @@
+- var complie = htmlWebpackPlugin.options.globalConfig
+- var src ='../../plugins/'
+- var map = complie.vueScript || []
+each item in map
+  script(type="text/javascript",src=src+item)
