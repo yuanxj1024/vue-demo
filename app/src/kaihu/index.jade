@@ -13,9 +13,10 @@ html(lang=en)
     //- div hello word 123 
     //- div.person 111323
     div#content
+      button(@click="test")  test
       group
         switch(title="Toggle",:value.sync="show")
-      alert(:show.sync="show",title='test') test message
+      alert(:show.sync="show",title='test') 提示 
       main-content
     //- div#contentId
     //-   content

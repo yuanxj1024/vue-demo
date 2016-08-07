@@ -16,7 +16,13 @@ v = new Vue({
   },
   el: '#content',
   data: {
-    show: false
+    show: false,
+    title: 'test'
+  },
+  methods: {
+    test: function () {
+      console.log(this.title);
+    }
   },
   ready: function () {
     // console.log('main ready');
