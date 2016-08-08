@@ -1,0 +1,3 @@
+[submodule "app/src/_/js/javascript_bridge"]
+	path = app/src/_/js/javascript_bridge
+	url = git@git.niuguwang.com:Project/javascript_bridge.git
