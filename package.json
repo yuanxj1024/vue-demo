@@ -15,9 +15,9 @@
     "prebuild": "npm run webpack",
     "eslint": "eslint ./app/src/"
   },
-  "pre-commit":{
-   "run": "eslint"
- },
+  "pre-commit": {
+    "run": "eslint"
+  },
   "author": "yuanxj1024",
   "license": "ISC",
   "devDependencies": {
