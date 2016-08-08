@@ -1,0 +1,17 @@
+//- - var complie = htmlWebpackPlugin.options.globalConfig
+//- - var src = complie.cdn || '/plugins/'
+
+doctype html
+html(lang=en)
+  head
+    title 360某次活动落地页
+    include ../_/jade/baseStyle.jade
+  body
+    div.container
+      p 下面是路由
+      a(v-link="'home'") 首页
+      a(v-link="'about'") about
+      router-view(keep-alive)
+    
+    include ../_/jade/vue.jade
+    

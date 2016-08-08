@@ -1,17 +1,15 @@
 {
   "random": true,
   "baseScript": [
-    "jquery2/jquery.min.js",
     "underscore/underscore-min.js"
   ],
-  "vueScript":[
+  "vueScript": [
+    "underscore/underscore-min.js",
     "vue/dist/vue.min.js"
   ],
-  "mobile":[
-
-  ],
   "baseStyle": [
-    "vux/dist/vux.css"
+    "normalize-css/normalize.css",
+    "weui/dist/style/weui.min.css"
   ],
   "cdn": ""
 }

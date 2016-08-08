@@ -16,6 +16,9 @@ var Content = Vue.extend({
     },
     getMegList: function () {
       console.log('getMegList');
+      this.$router.go({
+        name: 'home'
+      });
     }
   }
 });
